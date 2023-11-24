@@ -488,6 +488,9 @@ section {
     height: 25px;
 }
 /* #########contact######### */
+.contact-us {
+    background: transparent;
+}
 .contact-us .container {
     margin: 3rem 0; 
 }
@@ -550,10 +553,20 @@ section {
     font-size: 1.7rem;
     color: #015E57;
 }
+
+.contact-us form .input{
+    width: 100%;
+    margin: 0;
+}
+.contact-us form .input-box,
+.contact-us form .area {
+    z-index: 5;
+}
 .contact-us form textarea {
     height: 20rem;
     border: var(--border);
     border-radius: .5rem;
+    background: #fff;
     padding: 1.4rem;
     width: 100%;
     resize: none;
@@ -730,6 +743,11 @@ footer .input-group button {
         top: 0;
         z-index: -1;
         opacity: .5;
+    }
+    .contact-us form .input-box:nth-child(2),
+    .contact-us form .input-box:nth-child(1) {
+        margin-left:.5rem;
+        width: 100%;
     }
     .privet::after,
     .news::after {
