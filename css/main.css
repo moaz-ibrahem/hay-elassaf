@@ -104,6 +104,8 @@ section {
     top: 0; left: 0; right: 0;
     z-index: 999;
     background: #ffffff66;
+    backdrop-filter: blur(.5rem);
+    transition: .2s linear;
     padding: 2.5rem 9%;
 }
 .header .navbar a {
