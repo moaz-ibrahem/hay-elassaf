@@ -3,7 +3,7 @@
     --green: #05c4b1;
     --light-green: #00A796;
     --black: #130f40;
-    --light-color: #666;
+    --light-color: #0000007c;
     --border: .1rem solid rgba(0,0,0,.1);
     --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
@@ -105,7 +105,7 @@ section {
 .par-card{
     font-size: 1.4rem;
     font-weight: 500;
-    color: #0000007c;
+    color: var(--light-color);
     line-height: 20px;
 }
 /* card  */
@@ -189,7 +189,7 @@ section {
     font-size: 200%;
     margin: 15px 0;
     line-height: 52px;
-    color: #0000007c;
+    color: var(--light-color);
 }
 .home .texet .btn{
     padding: 1.8rem 5rem;
@@ -293,7 +293,7 @@ section {
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 3rem;
-    color: #0000006c;
+    color: var(--light-color);
     margin: 50px 0;
 }
 /* ##############service############## */
@@ -379,7 +379,7 @@ section {
     font-weight: 400;
     font-size: 1.3rem;
     line-height: 25px;
-    color: #0000008f;
+    color: var(--light-color);
     margin: 3rem 0;
 }
 /* start team  */
@@ -445,7 +445,7 @@ section {
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 3rem;
-    color: #0000006c;
+    color: var(--light-color);
     margin: 50px 0;
 }
 .c-1 {
@@ -497,7 +497,7 @@ section {
     font-size: 17px;
     margin: 25px 0;
     line-height: 30px;
-    color: #0000007c;
+    color: var(--light-color);
 }
 /* #########contact######### */
 .contact-us {
