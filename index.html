@@ -19,11 +19,11 @@
     <!-- start header --> 
     <header class="header flex">
         <div id="login-btn" class="wow slideInLeft"  data-wow-delay=".3s">
-            <button class="btn">تواصل معنا</button>
+            <button ><a href="#conatct-us" class="btn">تواصل معنا</a></button>
         </div>
         <nav class="navbar wow slideInDown">
-            <a href="#"> اعمالنا</a>
-            <a href="#"> نبذه عنا</a>
+            <a href="#worked"> اعمالنا</a>
+            <a href="#about-us"> نبذه عنا</a>
             <a href="#service"> خدماتنا</a>
             <a href="#home" class="active" > الرئيسية</a>
         </nav>
@@ -32,7 +32,7 @@
     </header>
     <!-- end header  -->
     <!-- start home  -->
-    <section class="home">
+    <section class="home" id="home">
         <div class="container">
             <div class="row">
                 <div class="photo col-lg-4 col-12 wow slideInLeft" data-wow-delay=".6s">
@@ -48,7 +48,7 @@
     </section>
     <!-- end home  -->
     <!-- start work  -->
-    <section class="work ">
+    <section class="work " id="worked">
         <h2 class="head wow slideInDown">اهم مميزات التعامل معنا</h2>
         <div class="container">
             <div class="work-us wow bounceInUp">
@@ -79,7 +79,7 @@
     </section>
     <!-- end work  -->
     <!-- start about  -->
-    <section class="sec-about "> 
+    <section class="sec-about" id="about-us"> 
         <div class="container">            
             <div class="about-us">
                 <div class="row">
@@ -140,7 +140,7 @@
     </section>
     <!-- end privet  -->
     <!-- start service  -->
-    <section class="sec-service wow slideInDown" >
+    <section class="sec-service wow slideInDown" id="service">
         <div class="container">
             <div class="row wow bounceInUp" data-wow-delay=".5s">
                 <div class="service col-lg-3 col-sm-6 col-12">
@@ -280,15 +280,15 @@
                 <div class="texet col-lg-6 col-12 wow slideInRight">
                     <h2 class="head">برنامج هيا العساف لحفظ وضبط القرآن الكريم - طريقك نحو السعادة التي لا تنتهي</h2>
                     <p>بدأنا العمل بعد استعانتنا بالله – عز وجل – على برامج لحفظ كتاب الله ــ تعالى ــ شاملة ، ومتطورة، ومميزة ؛ تكون سبباً – بعد توفيق الله تعالى – لعودة كثير من المسلمين إلى كتاب ربهم ؛ خاصة أن حفظ القرآن الكريم لهوا خير معين على تدبر كلام الله – سبحانه – ومعرفة مقصود الشارع الحكيم</p>
-                    <div class="btn btn-img wow bounceInUp" data-wow-delay=".3s"><img src="img/app store.png" alt="..."></div>
-                    <div class="btn btn-img wow bounceInUp" data-wow-delay=".3s"><img src="img/google play.png" alt="..."></div>
+                    <div class="btn-img wow bounceInUp" data-wow-delay=".3s"><img src="img/app store.png" alt="..."></div>
+                    <div class="btn-img wow bounceInUp" data-wow-delay=".3s"><img src="img/google play.png" alt="..."></div>
                 </div>
             </div>
         </div>
     </section>
     <!-- end mobile  -->
     <!-- start contact  -->
-    <section class="contact-us">
+    <section class="contact-us" id="conatct-us">
         <div class="container">
             <div class="row">
                 <form action="" class="col-lg-6 col-12 wow slideInLeft" method="post">
@@ -351,7 +351,7 @@
                     <h4 class="mb-5">سجل الدخول لمتابعه اخر الاخبار</h4>
                     <div class="input-group mb-3 mb-5">
                         <input type="text" class="form-control" placeholder="اكتب بريدك الالكتروني" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                        <button class="btn btn-outline-warning" type="button" id="button-addon1">اشترك</button>
+                        <button class="btn" type="button" id="button-addon1">اشترك</button>
                     </div>
                     <p class="text-secondary mb-5">سوف نرسل لك اخر التحديثات</p>
                     <div class="gruop-link " >
@@ -381,25 +381,25 @@
                     <h4 class="mb-3">روابط سريعه</h4>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#" >الرئيسيه</a>
+                            <a href="#home" >الرئيسيه</a>
                         </li>
                         <li>
-                            <a href="#" >خدماتنا</a>
+                            <a href="#service" >خدماتنا</a>
                         </li>
                         <li>
-                            <a href="#" >نبذه عنا</a>
+                            <a href="#about-us" >نبذه عنا</a>
                         </li>
                         <li>
-                            <a href="#" >اعمالنا</a>
+                            <a href="#worked" >اعمالنا</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 col-12 wow bounceInUp">
                     <div class="footer-item wow fadeInUp">
-                        <img src="img/logo.png" alt="">
+                        <img class="logo" src="img/logo.png" alt="">
                         <p class="logo-par">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى،</p>
-                        <div class="btn footer-img"><img src="img/app store.png" alt="..."></div>
-                        <div class="btn footer-img"><img src="img/google play.png" alt="..."></div>
+                        <div class="btn-img"><img src="img/app store.png" alt="..."></div>
+                        <div class="btn-img"><img src="img/google play.png" alt="..."></div>
                     </div>
                 </div>
             </div>
