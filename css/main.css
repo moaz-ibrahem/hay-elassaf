@@ -436,6 +436,7 @@ section {
     padding: 5rem 0;
     text-align: right;
     margin: 10rem 0;
+    z-index: 0;
 }
 .news .news-texet {
     margin-bottom: 3rem;
@@ -704,9 +705,9 @@ footer .btn-img {
     .header.active {
         padding: 2rem;
     }
-    .home{
+    /* .home{
         height: 700px;
-    }
+    } */
     .home .photo img {
         position: absolute;
         top: 50%;
