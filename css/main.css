@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,700;1,200;1,400;1,500;1,600&family=Varela+Round&display=swap');
 :root {
     --green: #05c4b1;
     --light-green: #00A796;
@@ -47,14 +46,13 @@ html {
     margin: 1rem;
     border-radius: 1rem;
     background-color: var(--light-green);
-    cursor: pointer;
 }
 .btn-img img{
     width: 100%;
     height: 25px;
 }
 .head{
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 900;
     width: 100%;
 }
@@ -83,6 +81,11 @@ html {
 section {
     background: #FFF;
 }
+img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
 /* card  */
 .card {
     box-shadow: var(--box-shadow);
@@ -90,23 +93,29 @@ section {
     margin: 2rem 15px;
     border-radius: 16px;
 }
+.img-card img{
+    width: 100%;
+    height: 100%;
+}
 .img-card {
-    width:  100%;
-    height: 300px;
+    max-width: 100%;
+    max-height: 300px;
 }
 .texet-card {
-    padding: 10px 20px 20px 20px;
+    padding-top: 5px;
+    width: 70%;
+    margin: auto;
 }
 .head-card {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    margin-bottom: 5px;
     color: var(--green);
 }
 .par-card{
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-weight: 500;
     color: var(--light-color);
-    line-height: 20px;
+    line-height: 2.5rem;
 }
 /* card  */
 /* ##################### */
@@ -158,23 +167,13 @@ section {
 }
 /* ##########home########### */
 .home {
-    padding-top: 0.1REM;
+    padding-top: 12%;
     background: url(../img/bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
-}
-.home :nth-child(1) {
-    margin-top: 8%;
-}
-.home .photo {
-    text-align: center;
-}
-.home .photo img {
-    width: 100%;
-
 }
 .home .texet {
     text-align: right;
@@ -203,6 +202,7 @@ section {
 }
 .work .work-us {
     padding-top: 3rem;
+    text-align: center;
 }
 .work .work-us .box-work {
     border: var(--border);
@@ -220,9 +220,10 @@ section {
 .work .work-us .box-work:hover p{
     color: #00A796;
 }
-.work .work-us img{
-    width: 70px;
-    height: 70px;
+.work .work-us .work-img{
+    max-width: 70px;
+    max-height: 70px;
+    margin: auto;
     margin-bottom: 1.5rem;
 }
 .work .work-us p{
@@ -241,16 +242,17 @@ section {
 }
 .about-us .texet-about p{
     margin: 2rem 0;
+    width: 95%;
+    margin: auto;
     margin-bottom: 3rem;
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 23px;
 }
-.about-us .photo-about img{
-    position: relative;
-}
-.about-us .photo-about img{
-    width: 95%;
+.about-us .photo-about {
+    max-width:100%;
+    padding: 2rem;
+    margin: auto;
 }
 .par-text-about .par-text-about{
     width: 100%;
@@ -261,14 +263,15 @@ section {
 .par-text-about .header-par-texet-about h4{
     font-weight: 500;
     font-size: 1.7rem;
-    padding-right: 35px;
+    padding-right: 13%;
     color: var(--green);
 }
-.par-text-about .header-par-texet-about img{
+.par-text-about .header-par-texet-about .texet-about-img{
     position: absolute;
-    top: 0;
+    top: -60%;
     right: 0;
-    width: 30px;
+    max-width: 15%;
+    padding: .8rem;
 }
 .about-us .texet-about .par-text-about p{
     margin: 1.5rem 0;
@@ -318,10 +321,11 @@ section {
 }
 .sec-service .service:nth-child(4)::after {
     position: relative;
-}  
-.sec-service .service img {
-    width: 65px;
+}
+.sec-service .service .service-img {
+    max-width: 65px;
     height: 65px;
+    margin: auto;
 }
 .sec-service .service p {
     font-size: 2rem;
@@ -347,7 +351,8 @@ section {
     padding-top: 5px;
     background: #00a79611;
     border-radius: 15px;
-    margin: 2rem 2.5%;
+    margin: auto;
+    margin-bottom: 2rem;
 }
 .sec-m-w .m-w::after {
     content: '';
@@ -355,9 +360,9 @@ section {
     top: 0;
 
 }
-.sec-m-w .m-w img{
+.sec-m-w .m-w .m-w-img{
     position: absolute;
-    width: 250px;
+    max-width: 250px;
     height: 300px;
     bottom: 0;
     left: 0;
@@ -374,13 +379,18 @@ section {
     font-weight: 500;
     font-size: 2.5rem;
 }
+.sec-m-w .m-w .texet-m-w .btn{
+    margin-right: 1.5rem;
+}
 .sec-m-w .m-w .texet-m-w p{
     z-index: 2;
     font-weight: 400;
     font-size: 1.3rem;
     line-height: 25px;
     color: var(--light-color);
-    margin: 3rem 0;
+    padding: 3rem 0;
+    width: 90%;
+    margin: auto;
 }
 /* start team  */
 .team {
@@ -409,9 +419,10 @@ section {
     left: 50%;
     transform: translate( -50%, -50%);
 }
-.team .team-slider .box img{
-    width: 150px;
+.team .team-slider .box .team-img{
+    max-width: 150px;
     height: 200px;
+    margin: auto;
     opacity: 1;
 }
 .team .team-slider .box .content{
@@ -449,18 +460,22 @@ section {
     color: var(--light-color);
     margin: 50px 0;
 }
+
 .c-1 {
     margin-bottom: 3rem ;
 }
 .c-1 .img-card { 
-    width: 100% ;
+    max-width: 100% ;
     height: 170px;
 }
 .c-2 .texet-card {
     padding-right: 53%;
+    width: 95%;
+    margin: auto;
 }
-.c-2 .texet-card .par-card{
-    font-size: 1rem !important;
+.c-2 .img-card img{
+    width: 100%;
+    height: 100%;
 }
 .c-2 .img-card {
     position: absolute;
@@ -485,8 +500,6 @@ section {
     position: relative;
 }
 .mobile .photo img {
-    width: 100%;
-    height: 100%;
     bottom: 0;
 }
 .mobile .texet {
@@ -503,21 +516,19 @@ section {
 /* #########contact######### */
 .contact-us {
     background: transparent;
-    margin: 3rem 0; 
+    margin: auto; 
 }
-.contact-us .row {
+.contact-us .contact-box {
     position: relative;
     border: var(--border);
     box-shadow: var(--box-shadow);
     border-radius: 15px;
-    /* left: 11%; */
+    margin: auto;
 }
 .contact-us .img-form img {
-    width: 100%;
     padding: 1rem;
     background-color: var(--light-bg);
     border-radius: .5rem;
-
 }
 .contact-us form {
     width: 50%;
@@ -526,7 +537,8 @@ section {
     text-align: right;
 }
 .contact-us form h3  {
-    margin-bottom: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
     color: #015E57;
 }
 .contact-us form .f-box {
@@ -571,6 +583,7 @@ section {
 }
 .contact-us form .input-box,
 .contact-us form .area {
+    width: 100%;
     z-index: 5;
 }
 .contact-us form textarea {
@@ -604,10 +617,12 @@ section {
 .sec-Certificates .Certificate {
     padding: 30px 0;
 }
-.sec-Certificates .Certificate img {
-    width: 100%;
+.sec-Certificates .Certificate .Certificate-img {
+    max-width: 100%;
     height: 80px;
 }
+
+
 /* #########contact######### */
 
 
@@ -615,78 +630,87 @@ section {
 
 
 /* #########footer######### */
-footer{
+.footer{
     background: #4d5452 ;
-    padding: 50px;
+    padding: 4rem;
     color: #fff;
     text-align: right;
 }
-footer h4 {
+.footer h4 {
     color: var(--green);
     font-size: 2rem;
 }
-footer .po{
-    padding: 2rem;
+.footer .po{
+    padding: 0 2rem;
     text-align: center;
 }
-footer .logo {
-    width: 300px;
+.footer .logo {
+    width: 250px;
     margin: 10px 0;
-    padding: 5px 10px;
+    padding: 5px ;
 }
-footer .logo-par {
+.footer .logo-par {
+    width: 95%;
+    margin: auto;
     margin: 3rem 0;
-    margin-right: -4rem;
     line-height: 25px;
 }
-footer ul {
-    margin-top: 5rem;
+.footer ul {
+    margin-top: 3rem;
 }
-footer li {
+.footer li {
     margin: 1.4rem 0;
 }
-footer li a{
+.footer li a{
     text-decoration: none;
     color: #fff;
     font-size: 1.6rem;
     margin: 1rem 0;
 }
-footer li a:hover {
+.footer li a:hover {
     opacity: 0.8;
     color: var(--light-green);
 }
-footer .gruop-link a{
+.footer .gruop-link a{
     color: #fff;
     margin: 0 13px;
 }
-footer .gruop-link a:hover {
+.footer .gruop-link a:hover {
     opacity: 0.7;
 }
-footer .input-group {
+.footer .input-group {
     width: 100%;
     border-radius: 20px;
 }
-footer .input-group .form-control {
+.footer .input-group .form-control {
     text-align: right;
     border-radius: 16px;
 }
-footer .input-group .btn {
+.footer .input-group .btn {
     width: 32%;
     padding: 14px;
     border-radius: 16px;
 }
-footer .text-secondary {
+.footer .saport {
+    line-height: 30px;
+    font-size: 1.4rem;
+}
+.footer .saport h4{
+    margin-bottom: 3rem;
+}
+.footer .text-secondary {
     color: white !important;
     font-size: 1.4rem;
 }
 .input-group > .form-control, .input-group > .form-select {
     margin-top: 9px;
 }
-footer .input-group input,
-footer .input-group button {
+.footer .input-group input,
+.footer .input-group button {
     border-radius: unset;
+    font-size: 1.5rem;
 }
-footer .btn-img {
+.footer .btn-img {
     width: 140px;
 }
 /* footer  */
@@ -705,17 +729,12 @@ footer .btn-img {
     .header.active {
         padding: 2rem;
     }
-    /* .home{
-        height: 700px;
-    } */
+    .home{
+        padding-top: 20rem;
+    } 
     .home .photo img {
+        opacity: 0;
         position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        left: 50%;
-        height: 100vh;
-        opacity: .5;
-        z-index: -2;
     }
     .work .work-us .box-work {
         margin: 10px calc(100%/15);
@@ -747,13 +766,6 @@ footer .btn-img {
     .contact-us form {
         width: 100%;
     }
-    .contact-us .img-form img {
-        height: 100%;
-        position: absolute;
-        top: 0;
-        z-index: -1;
-        opacity: .5;
-    }
     .contact-us form .input-box:nth-child(2),
     .contact-us form .input-box:nth-child(1) {
         margin-left:.5rem;
@@ -775,7 +787,7 @@ footer .btn-img {
     }
     .header .navbar{
         position: absolute;
-        top: 99%; left: 0; right: 0;
+        top: 0; left: 0; right: 0;
         background: #fff;
         border-top: var(--border);
         clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0);
@@ -787,6 +799,7 @@ footer .btn-img {
         display: block;
         margin: 2rem;
         font-size: 2rem;
+        width: 100%;
     }
     #menu-btn {
         display: block;
